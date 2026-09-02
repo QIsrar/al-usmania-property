@@ -149,9 +149,22 @@ export function Footer() {
             <p className="text-xs text-stone-500">
               © {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
             </p>
-            <p className="text-xs text-stone-600">
-              Abbottabad&apos;s Trusted Property Partner
-            </p>
+            <div className="text-xs text-stone-600 flex flex-wrap items-center gap-1.5">
+              <span>Developed by</span>
+              <a 
+                href="https://qi-tyrix.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-stone-800 border border-stone-700 hover:border-brand-500/50 hover:bg-stone-800/80 transition-all duration-300 group"
+              >
+                <span className="font-bold tracking-wide bg-gradient-to-r from-brand-400 to-amber-500 bg-clip-text text-transparent group-hover:from-brand-300 group-hover:to-amber-400">
+                  QI Tyrix
+                </span>
+                <svg className="w-3 h-3 text-stone-500 group-hover:text-brand-400 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
