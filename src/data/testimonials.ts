@@ -1,0 +1,60 @@
+import { Testimonial } from "@/types";
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "t1",
+    name: "Ahmad Raza",
+    location: "Jinnahabad, Abbottabad",
+    text: "Qazi sahab helped us find a house in Jinnahabad that was exactly within our budget. No extra charges, no surprises. Honestly, I was nervous about dealing with property agents, but these people are straightforward. They showed us what they promised — nothing more, nothing less. Highly recommend.",
+    rating: 5,
+    date: "2026-06-15",
+  },
+  {
+    id: "t2",
+    name: "Sadia Bibi",
+    location: "Supply, Abbottabad",
+    text: "We were looking for a rental in Supply for months. A friend recommended AL-Usmania Property, and within a week Qazi sahab showed us three good options. We moved into our flat two weeks later. Fast, honest, and no hidden commission. Very happy with the service.",
+    rating: 5,
+    date: "2026-04-22",
+  },
+  {
+    id: "t3",
+    name: "Tahir Khan",
+    location: "Mandian, Abbottabad",
+    text: "Sold my 7 marla plot through AL-Usmania. The process was smooth and Qazi sahab was upfront about everything — the paperwork, the timeline, the realistic price I could expect. No false promises. That's rare in this business.",
+    rating: 5,
+    date: "2026-03-10",
+  },
+  {
+    id: "t4",
+    name: "Nazia Begum",
+    location: "PMA Link Road, Abbottabad",
+    text: "I'm a single mother and was worried about being taken advantage of in the property market. Qazi sahab treated me with respect and found us a safe, affordable portion near PMA. He even helped negotiate the rent down. Genuinely good people.",
+    rating: 5,
+    date: "2026-07-05",
+  },
+  {
+    id: "t5",
+    name: "Farhan Malik",
+    location: "Cantt, Abbottabad",
+    text: "Bought a 5 marla house through them. What I appreciated most was the honesty — they told me the cons of the property too, not just the pros. That kind of transparency builds trust. Will definitely use their services again.",
+    rating: 5,
+    date: "2026-02-18",
+  },
+  {
+    id: "t6",
+    name: "Bilal Ahmed",
+    location: "Mirpur, Abbottabad",
+    text: "Quick response on WhatsApp, showed us properties the same day we called. Qazi sahab knows the Abbottabad market inside out. Got us a good deal on a plot in Mirpur. Simple, honest dealing.",
+    rating: 5,
+    date: "2026-05-30",
+  },
+  {
+    id: "t7",
+    name: "Asma Qureshi",
+    location: "Sarban Hills, Abbottabad",
+    text: "Professional service from start to finish. They handled all the paperwork for our house purchase and kept us informed at every step. No hidden fees, no drama. The way property dealing should be.",
+    rating: 5,
+    date: "2026-01-12",
+  },
+];

@@ -1,0 +1,32 @@
+{
+  "name": "al-usmania-property",
+  "version": "1.0.0",
+  "description": "AL-Usmania Property — Trusted Property Dealer in Abbottabad",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": ["real-estate", "abbottabad", "property"],
+  "author": "Qazi Sher Khan",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.4.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  }
+}

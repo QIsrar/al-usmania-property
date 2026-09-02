@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fdf8f0;
+  --color-brand-100: #f9eddb;
+  --color-brand-200: #f2d7b3;
+  --color-brand-300: #e9bc82;
+  --color-brand-400: #dfa054;
+  --color-brand-500: #C8965A;
+  --color-brand-600: #b07a3a;
+  --color-brand-700: #935f2e;
+  --color-brand-800: #7a4d2a;
+  --color-brand-900: #654125;
+  --color-brand-950: #372012;
+
+  --color-badge-sale: #C8965A;
+  --color-badge-rent: #4A7C6F;
+  --color-badge-new: #4A7C6F;
+  --color-badge-hot: #C45B4A;
+  --color-badge-reduced: #5B7BC4;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+
+  --animate-fade-in: fadeIn 0.6s ease-out forwards;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-slide-in-right: slideInRight 0.3s ease-out forwards;
+  --animate-scale-in: scaleIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ─── Base Styles ──────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-stone-50 text-stone-800 antialiased;
+}
+
+/* ─── Scroll-triggered animations ──────────────────────────────── */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Custom Scrollbar ─────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-stone-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-stone-400;
+}
+
+/* ─── Photo Gallery Lightbox ───────────────────────────────────── */
+
+.lightbox-overlay {
+  @apply fixed inset-0 bg-black/90 z-50 flex items-center justify-center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ─── Property Card Hover ──────────────────────────────────────── */
+
+.property-card {
+  @apply transition-all duration-300 ease-out;
+}
+
+.property-card:hover {
+  @apply -translate-y-1 shadow-xl;
+}
+
+/* ─── Selection Color ──────────────────────────────────────────── */
+
+::selection {
+  @apply bg-brand-200 text-brand-900;
+}
