@@ -20,11 +20,17 @@ export default function SellPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const message = `Hi, I'd like to list my property with AL-Usmania Property.
+    const purposeText = {
+      buy: "looking to buy a",
+      sale: "looking to sell my",
+      rent: "looking to rent a",
+      rent_out: "looking to rent out my",
+    }[formData.purpose as keyof typeof purposeText];
+
+    const message = `Hi, I'm ${purposeText} property with AL-Usmania Property.
 
 Property Details:
-- Type: ${PROPERTY_TYPE_LABELS[formData.propertyType]}
-- Purpose: For ${formData.purpose === "sale" ? "Sale" : "Rent"}
+- Type: ${PROPERTY_TYPE_LABELS[formData.propertyType as keyof typeof PROPERTY_TYPE_LABELS]}
 - Area: ${formData.area}
 - Size: ${formData.areaSize} ${formData.areaUnit}
 - Price Expectation: ${formData.priceExpectation}
@@ -43,12 +49,11 @@ Additional Notes: ${formData.description || "None"}`;
       <section className="bg-stone-900 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-4">
-            List Your Property
+            List or Find Property
           </h1>
           <p className="text-lg text-stone-400 max-w-2xl mx-auto">
-            Want to sell or rent out your property in Abbottabad? Tell us about
-            it and we&apos;ll get it in front of serious buyers and tenants —
-            with no hidden commission.
+            Want to buy, sell, or rent property in Abbottabad? Tell us what you need
+            and we&apos;ll help you find the right match — with no hidden commission.
           </p>
         </div>
       </section>
@@ -101,6 +106,8 @@ Additional Notes: ${formData.description || "None"}`;
                 <input
                   type="text"
                   required
+                  pattern="^[a-zA-Z\s]+$"
+                  title="Name should not contain numbers or special characters"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -118,12 +125,14 @@ Additional Notes: ${formData.description || "None"}`;
                 <input
                   type="tel"
                   required
+                  pattern="^\d{11}$"
+                  title="Phone number must be exactly 11 digits"
                   value={formData.phone}
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
-                  placeholder="03XX-XXXXXXX"
+                  placeholder="03XXXXXXXXX"
                 />
               </div>
 
@@ -159,8 +168,10 @@ Additional Notes: ${formData.description || "None"}`;
                   }
                   className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                 >
+                  <option value="buy">Buy</option>
                   <option value="sale">Sell</option>
-                  <option value="rent">Rent Out</option>
+                  <option value="rent">Rent</option>
+                  <option value="rent_out">Rent Out</option>
                 </select>
               </div>
 

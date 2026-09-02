@@ -6,7 +6,7 @@ export const BUSINESS = {
   shortTagline: "Honesty · Trust · Local Expertise",
   description:
     "AL-Usmania Property is a trusted residential and commercial property dealer based in Abbottabad, specializing in buying, selling, and renting properties across the city.",
-  owner: "Qazi Sher Khan",
+  owner: "Qazi Sajjad & Qazi Sher Khan",
   location: {
     address: "Bara Tower, Shop No. 1, PMA Link Road",
     city: "Abbottabad",
@@ -16,14 +16,14 @@ export const BUSINESS = {
     coordinates: { lat: 34.1688, lng: 73.2215 },
   },
   phone: {
-    primary: "0321-9981683",
-    secondary: "0322-6634463",
-    primaryClean: "+923219981683",
-    secondaryClean: "+923226634463",
+    primary: "0322-5634463",
+    secondary: "0321-9981683",
+    primaryClean: "+923225634463",
+    secondaryClean: "+923219981683",
   },
   whatsapp: {
-    primary: "+923219981683",
-    secondary: "+923226634463",
+    primary: "+923225634463",
+    secondary: "+923219981683",
   },
   social: {
     facebook: "https://www.facebook.com/profile.php?id=100064006479041",

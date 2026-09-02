@@ -32,17 +32,17 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-stone prose-lg max-w-none">
             <p className="text-stone-600 leading-relaxed">
-              My name is <strong className="text-stone-800">Qazi Sher Khan</strong>, and I run 
-              AL-Usmania Property from our small office in Bara Tower on PMA Link Road, Abbottabad. 
-              This is not a big franchise operation with hundreds of agents. It&apos;s a local 
-              property business built on one principle: <em>honesty</em>.
+              My name is <strong className="text-stone-800">Qazi Sher Khan</strong>, and alongside Qazi Sajjad, we run 
+              AL-Usmania Property from our office in Bara Tower on PMA Link Road, Abbottabad. 
+              With around 20 years of experience in property-related tasks, we have built a local 
+              property business founded on one core principle: <em>honesty</em>.
             </p>
 
             <p className="text-stone-600 leading-relaxed">
-              I&apos;ve lived and worked in Abbottabad for years. I know the streets, the sectors, 
-              the fair prices, and the people. When someone comes to me looking for a house, a plot, 
-              or a rental — I don&apos;t just show them the most expensive option. I show them 
-              what&apos;s right for them. And I tell them the truth about it — the good parts and 
+              We have lived and worked in Abbottabad for decades. We know the streets, the sectors, 
+              the fair prices, and the people. When someone comes to us looking for a house, a plot, 
+              or a rental — we don't just show them the most expensive option. We show them 
+              what's right for them. And we tell them the truth about it — the good parts and 
               the not-so-good parts.
             </p>
 
@@ -54,15 +54,15 @@ export default function AboutPage() {
 
             <p className="text-stone-600 leading-relaxed">
               Whether you&apos;re buying your first home, looking for a rental for your family, 
-              selling a plot, or hunting for a commercial space — I&apos;m here to help. 
-              I&apos;m available seven days a week, and the fastest way to reach me is on WhatsApp. 
-              Send a message, tell me what you need, and I&apos;ll get back to you — usually within 
+              selling a plot, or hunting for a commercial space — we&apos;re here to help. 
+              We&apos;re available seven days a week, and the fastest way to reach us is on WhatsApp. 
+              Send a message, tell us what you need, and we&apos;ll get back to you — usually within 
               minutes.
             </p>
 
             <p className="text-stone-600 leading-relaxed">
-              Abbottabad is a beautiful city, and I&apos;m proud to help people find their place in 
-              it. If you&apos;re looking for property here, I&apos;d be glad to work with you — 
+              Abbottabad is a beautiful city, and we&apos;re proud to help people find their place in 
+              it. If you&apos;re looking for property here, we&apos;d be glad to work with you — 
               honestly and openly, just as it should be.
             </p>
           </div>

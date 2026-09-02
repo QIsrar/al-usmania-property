@@ -156,7 +156,7 @@ export default function ContactPage() {
               </h2>
               <div className="rounded-xl overflow-hidden border border-stone-200 aspect-square lg:aspect-[4/5]">
                 <iframe
-                  src={`https://www.google.com/maps?q=${BUSINESS.location.coordinates.lat},${BUSINESS.location.coordinates.lng}&z=16&output=embed`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(BUSINESS.location.full)}&z=17&output=embed`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
