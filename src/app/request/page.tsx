@@ -20,12 +20,13 @@ export default function SellPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const purposeText = {
+    const purposeOptions = {
       buy: "looking to buy a",
       sale: "looking to sell my",
       rent: "looking to rent a",
       rent_out: "looking to rent out my",
-    }[formData.purpose as keyof typeof purposeText];
+    };
+    const purposeText = purposeOptions[formData.purpose as keyof typeof purposeOptions];
 
     const message = `Hi, I'm ${purposeText} property with AL-Usmania Property.
 
