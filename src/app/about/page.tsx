@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-stone prose-lg max-w-none">
             <p className="text-stone-600 leading-relaxed">
-              My name is <strong className="text-stone-800">Qazi Sher Khan</strong>, and alongside Qazi Sajjad, we run 
+              My name is <strong className="text-stone-800">Qazi Sajjad</strong>, and alongside my son, Qazi Sher Khan, we run 
               AL-Usmania Property from our office in Bara Tower on PMA Link Road, Abbottabad. 
               With around 20 years of experience in property-related tasks, we have built a local 
               property business founded on one core principle: <em>honesty</em>.

@@ -32,7 +32,7 @@ export const BUSINESS = {
   stats: {
     followers: "1,000+",
     recommendRate: "100%",
-    reviews: 7,
+    reviews: "100+",
   },
 } as const;
 
@@ -59,8 +59,8 @@ export const NAV_LINKS = [
   { label: "Properties", href: "/properties" },
   { label: "Areas", href: "/areas" },
   { label: "About", href: "/about" },
-  { label: "Sell Property", href: "/sell" },
   { label: "Contact", href: "/contact" },
+  { label: "Property Request", href: "/request" },
 ] as const;
 
 // ─── Property Type Labels ─────────────────────────────────────────

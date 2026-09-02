@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { NAV_LINKS, BUSINESS, WHATSAPP_MESSAGES } from "@/lib/constants";
 import { whatsappLink, cn } from "@/lib/utils";
 
@@ -33,21 +34,25 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-brand-500 rounded-lg flex items-center justify-center">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-6 h-6 lg:w-7 lg:h-7 text-white"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+          <Link 
+            href="/" 
+            className="flex items-center gap-3 shrink-0"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
+              <Image 
+                src="/images/logo-modern.jpg" 
+                alt={`${BUSINESS.name} Logo`} 
+                width={48} 
+                height={48} 
+                className="object-cover w-full h-full"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <p className="font-serif text-lg lg:text-xl font-bold text-stone-800 leading-tight">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BUSINESS, NAV_LINKS, WHATSAPP_MESSAGES } from "@/lib/constants";
 import { whatsappLink, phoneLink } from "@/lib/utils";
 
@@ -11,20 +12,14 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="w-6 h-6 text-white"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                  />
-                </svg>
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
+                <Image 
+                  src="/images/logo-modern.jpg" 
+                  alt={`${BUSINESS.name} Logo`} 
+                  width={40} 
+                  height={40} 
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div>
                 <p className="font-serif text-lg font-bold text-white leading-tight">
