@@ -353,7 +353,7 @@ export const properties: Property[] = [
       "Near Parking",
     ],
     images: [
-      "/images/properties/shop-1.jpg",
+      "/images/properties/shop-2.jpg",
     ],
     status: "none",
     featured: false,
@@ -451,7 +451,7 @@ export const properties: Property[] = [
       "30ft Road",
     ],
     images: [
-      "/images/properties/plot-2.jpg",
+      "/images/properties/plot-3.jpg",
     ],
     status: "hot",
     featured: false,
