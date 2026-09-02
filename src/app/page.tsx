@@ -49,7 +49,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-stone-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Find your perfect home, plot, or commercial space in Abbottabad.
+            Find your perfect home, plot, or commercial space in Abbottabad.<br />
             {BUSINESS.owner} and the AL-Usmania team are here to help —
             with honesty, no hidden fees, and local expertise you can trust.
           </p>

@@ -30,9 +30,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/house-1.jpg",
-      "/images/properties/house-1-interior.jpg",
-      "/images/properties/house-1-kitchen.jpg",
-      "/images/properties/house-1-garden.jpg",
     ],
     status: "hot",
     featured: true,
@@ -66,8 +63,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/flat-1.jpg",
-      "/images/properties/flat-1-living.jpg",
-      "/images/properties/flat-1-bedroom.jpg",
     ],
     status: "new",
     featured: true,
@@ -100,7 +95,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/plot-1.jpg",
-      "/images/properties/plot-1-area.jpg",
     ],
     status: "none",
     featured: true,
@@ -132,7 +126,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/shop-1.jpg",
-      "/images/properties/shop-1-front.jpg",
     ],
     status: "none",
     featured: false,
@@ -165,7 +158,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/portion-1.jpg",
-      "/images/properties/portion-1-bedroom.jpg",
     ],
     status: "new",
     featured: true,
@@ -202,9 +194,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/house-2.jpg",
-      "/images/properties/house-2-garden.jpg",
-      "/images/properties/house-2-living.jpg",
-      "/images/properties/house-2-kitchen.jpg",
     ],
     status: "hot",
     featured: true,
@@ -237,7 +226,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/flat-2.jpg",
-      "/images/properties/flat-2-living.jpg",
     ],
     status: "none",
     featured: false,
@@ -271,8 +259,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/house-3.jpg",
-      "/images/properties/house-3-interior.jpg",
-      "/images/properties/house-3-rooftop.jpg",
     ],
     status: "new",
     featured: true,
@@ -304,7 +290,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/plot-2.jpg",
-      "/images/properties/plot-2-road.jpg",
     ],
     status: "reduced",
     featured: false,
@@ -338,7 +323,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/portion-2.jpg",
-      "/images/properties/portion-2-kitchen.jpg",
     ],
     status: "none",
     featured: true,
@@ -369,7 +353,7 @@ export const properties: Property[] = [
       "Near Parking",
     ],
     images: [
-      "/images/properties/shop-2.jpg",
+      "/images/properties/shop-1.jpg",
     ],
     status: "none",
     featured: false,
@@ -404,8 +388,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/house-4.jpg",
-      "/images/properties/house-4-drawing.jpg",
-      "/images/properties/house-4-kitchen.jpg",
     ],
     status: "none",
     featured: true,
@@ -437,7 +419,6 @@ export const properties: Property[] = [
     ],
     images: [
       "/images/properties/house-5.jpg",
-      "/images/properties/house-5-courtyard.jpg",
     ],
     status: "none",
     featured: false,
@@ -470,7 +451,7 @@ export const properties: Property[] = [
       "30ft Road",
     ],
     images: [
-      "/images/properties/plot-3.jpg",
+      "/images/properties/plot-2.jpg",
     ],
     status: "hot",
     featured: false,
