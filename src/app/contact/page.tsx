@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BUSINESS, WHATSAPP_MESSAGES, SEO } from "@/lib/constants";
 import { whatsappLink, phoneLink } from "@/lib/utils";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -17,7 +18,7 @@ export default function ContactPage() {
     <div className="pt-20 lg:pt-24">
       {/* Hero */}
       <section className="bg-stone-900 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" delay={0.1}>
           <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-4">
             Get in Touch
           </h1>
@@ -25,14 +26,14 @@ export default function ContactPage() {
             The fastest way to reach us is on WhatsApp — we typically respond
             within minutes. You&apos;re also welcome to call or visit our office.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <div className="space-y-8">
+            <AnimatedSection className="space-y-8" delay={0.2}>
               <div>
                 <h2 className="font-serif text-2xl font-bold text-stone-800 mb-6">
                   Contact Details
@@ -147,10 +148,10 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
 
             {/* Map */}
-            <div>
+            <AnimatedSection delay={0.3}>
               <h2 className="font-serif text-2xl font-bold text-stone-800 mb-6">
                 Find Us
               </h2>
@@ -169,7 +170,7 @@ export default function ContactPage() {
               <p className="mt-4 text-sm text-stone-500">
                 {BUSINESS.location.full}
               </p>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>

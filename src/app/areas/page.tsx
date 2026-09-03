@@ -3,6 +3,7 @@ import Link from "next/link";
 import { areas } from "@/data/areas";
 import { properties } from "@/data/properties";
 import { SEO } from "@/lib/constants";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Areas We Serve in Abbottabad",
@@ -21,7 +22,7 @@ export default function AreasPage() {
     <div className="pt-20 lg:pt-24">
       {/* Hero */}
       <section className="bg-stone-900 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" delay={0.1}>
           <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-4">
             Areas We Serve
           </h1>
@@ -29,21 +30,22 @@ export default function AreasPage() {
             We cover all major residential and commercial areas across Abbottabad.
             Each area has its own character — here&apos;s a quick guide.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Areas Grid */}
       <section className="py-16 lg:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
-            {areas.map((area) => {
+            {areas.map((area, index) => {
               const areaProperties = properties.filter(
                 (p) => p.sector === area.name
               );
 
               return (
-                <div
+                <AnimatedSection
                   key={area.slug}
+                  delay={index * 0.1}
                   className="bg-white rounded-xl border border-stone-200 p-6 lg:p-8 hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
@@ -74,7 +76,7 @@ export default function AreasPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </AnimatedSection>
               );
             })}
           </div>

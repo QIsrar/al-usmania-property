@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BUSINESS, WHATSAPP_MESSAGES, PROPERTY_TYPE_LABELS } from "@/lib/constants";
 import { whatsappLink } from "@/lib/utils";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export default function SellPage() {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ Additional Notes: ${formData.description || "None"}`;
     <div className="pt-20 lg:pt-24">
       {/* Hero */}
       <section className="bg-stone-900 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" delay={0.1}>
           <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-4">
             List or Find Property
           </h1>
@@ -56,13 +57,13 @@ Additional Notes: ${formData.description || "None"}`;
             Want to buy, sell, or rent property in Abbottabad? Tell us what you need
             and we&apos;ll help you find the right match — with no hidden commission.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       <section className="py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Points */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+          <AnimatedSection className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12" delay={0.2}>
             {[
               {
                 title: "No Hidden Fees",
@@ -87,13 +88,14 @@ Additional Notes: ${formData.description || "None"}`;
                 <p className="text-xs text-stone-500">{item.desc}</p>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
 
           {/* Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="bg-white rounded-xl shadow-sm border border-stone-200 p-6 lg:p-8 space-y-6"
-          >
+          <AnimatedSection delay={0.3}>
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white rounded-xl shadow-sm border border-stone-200 p-6 lg:p-8 space-y-6"
+            >
             <h2 className="font-serif text-xl font-bold text-stone-800 mb-2">
               Property Details
             </h2>
@@ -274,6 +276,7 @@ Additional Notes: ${formData.description || "None"}`;
               We&apos;ll review and get back to you within 24 hours.
             </p>
           </form>
+          </AnimatedSection>
         </div>
       </section>
     </div>

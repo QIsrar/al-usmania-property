@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BUSINESS, WHATSAPP_MESSAGES, SEO } from "@/lib/constants";
 import { whatsappLink, phoneLink } from "@/lib/utils";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -17,19 +18,19 @@ export default function AboutPage() {
     <div className="pt-20 lg:pt-24">
       {/* Hero */}
       <section className="bg-stone-900 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" delay={0.2}>
           <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-4">
             Our Story
           </h1>
           <p className="text-lg text-stone-400 max-w-2xl mx-auto">
             A small, honest property office in Abbottabad — and the people behind it.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Story */}
       <section className="py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-stone prose-lg max-w-none">
             <p className="text-stone-600 leading-relaxed">
               My name is <strong className="text-stone-800">Qazi Sajjad</strong>, and alongside my son, Qazi Sher Khan, we run 
@@ -76,12 +77,12 @@ export default function AboutPage() {
               <p className="text-sm text-stone-500">Founder, {BUSINESS.name}</p>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Stats */}
       <section className="bg-stone-50 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
               { value: BUSINESS.stats.recommendRate, label: "Recommend Rate" },
@@ -97,12 +98,12 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Values */}
       <section className="py-16 lg:py-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl lg:text-3xl font-bold text-stone-800 text-center mb-12">
             What We Stand For
           </h2>
@@ -132,12 +133,12 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* CTA */}
       <section className="bg-stone-900 py-16 text-center">
-        <div className="max-w-2xl mx-auto px-4">
+        <AnimatedSection className="max-w-2xl mx-auto px-4">
           <h2 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-4">
             Let&apos;s Work Together
           </h2>
@@ -155,7 +156,7 @@ export default function AboutPage() {
             </svg>
             Chat on WhatsApp
           </a>
-        </div>
+        </AnimatedSection>
       </section>
     </div>
   );

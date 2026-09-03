@@ -9,10 +9,15 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": ["real-estate", "abbottabad", "property"],
+  "keywords": [
+    "real-estate",
+    "abbottabad",
+    "property"
+  ],
   "author": "Qazi Sher Khan",
   "license": "ISC",
   "dependencies": {
+    "framer-motion": "^13.2.0",
     "next": "^16.3.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"

@@ -9,6 +9,7 @@ import { areas } from "@/data/areas";
 import { testimonials } from "@/data/testimonials";
 import { BUSINESS, WHATSAPP_MESSAGES, PROPERTY_TYPE_LABELS } from "@/lib/constants";
 import { whatsappLink, phoneLink } from "@/lib/utils";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const CATEGORY_ICONS: Record<string, string> = {
   house: "🏠",
@@ -33,7 +34,7 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 text-center">
+        <AnimatedSection className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 text-center" delay={0.2}>
           {/* Trust Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-stone-200 mb-8 border border-white/10">
             <svg className="w-4 h-4 text-brand-400" fill="currentColor" viewBox="0 0 20 20">
@@ -84,7 +85,7 @@ export default function HomePage() {
               <SearchBar variant="hero" />
             </Suspense>
           </div>
-        </div>
+        </AnimatedSection>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
@@ -96,7 +97,7 @@ export default function HomePage() {
 
       {/* ─── Browse by Type ────────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-stone-800 mb-3">
               Browse by Property Type
@@ -126,12 +127,12 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Featured Listings ─────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-12">
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-stone-800 mb-3">
@@ -169,12 +170,12 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Why AL-Usmania ───────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-stone-800 mb-3">
               Why AL-Usmania Property?
@@ -238,12 +239,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Areas We Cover ───────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-12">
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-stone-800 mb-3">
@@ -280,12 +281,12 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Testimonials ─────────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-stone-800 mb-3">
               What Our Clients Say
@@ -332,12 +333,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Free Valuation CTA ───────────────────────────────── */}
       <section className="py-16 lg:py-20 bg-brand-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-16 h-16 mx-auto mb-6 bg-brand-100 rounded-2xl flex items-center justify-center">
             <svg className="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -362,12 +363,12 @@ export default function HomePage() {
             </svg>
             Get Free Valuation
           </a>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* ─── Final CTA Band ───────────────────────────────────── */}
       <section className="py-16 lg:py-24 bg-stone-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-4">
             Looking to Buy, Sell, or Rent?
           </h2>
@@ -398,7 +399,7 @@ export default function HomePage() {
               Call {BUSINESS.phone.primary}
             </a>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
     </>
   );
