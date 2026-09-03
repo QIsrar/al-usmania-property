@@ -86,7 +86,7 @@ export default function AboutPage() {
             {[
               { value: BUSINESS.stats.recommendRate, label: "Recommend Rate" },
               { value: BUSINESS.stats.followers, label: "Facebook Followers" },
-              { value: `${BUSINESS.stats.reviews}`, label: "Client Reviews" },
+              { value: `${BUSINESS.stats.satisfiedClients}`, label: "Satisfied Clients" },
               { value: "7 Days", label: "Always Available" },
             ].map((stat, i) => (
               <div key={i}>

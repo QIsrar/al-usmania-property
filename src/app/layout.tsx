@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: SEO.defaultDescription,
     images: [
       {
-        url: `${SEO.url}/images/og-image.jpg`,
+        url: `${SEO.url}/images/logo-modern.jpg`,
         width: 1200,
         height: 630,
         alt: SEO.defaultTitle,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SEO.defaultTitle,
     description: SEO.defaultDescription,
-    images: [`${SEO.url}/images/og-image.jpg`],
+    images: [`${SEO.url}/images/logo-modern.jpg`],
   },
   robots: {
     index: true,
@@ -103,7 +103,7 @@ export default function RootLayout({
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5",
-                reviewCount: BUSINESS.stats.reviews.toString(),
+                reviewCount: BUSINESS.stats.satisfiedClients.replace(/[^0-9]/g, ""),
                 bestRating: "5",
               },
             }),

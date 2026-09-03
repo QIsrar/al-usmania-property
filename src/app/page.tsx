@@ -298,7 +298,7 @@ export default function HomePage() {
                   </svg>
                 ))}
               </div>
-              <span>{BUSINESS.stats.recommendRate} Recommend Rate · {BUSINESS.stats.reviews} Reviews</span>
+              <span>{BUSINESS.stats.recommendRate} Recommend Rate · {BUSINESS.stats.satisfiedClients} Satisfied Clients</span>
             </div>
           </div>
 
