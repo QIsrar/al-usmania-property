@@ -159,7 +159,7 @@ function PropertiesFilter() {
             <select
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="px-3 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              className="px-3 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
             >
               <option value="all">All Types</option>
               {Object.entries(PROPERTY_TYPE_LABELS).map(([value, label]) => (
@@ -171,7 +171,7 @@ function PropertiesFilter() {
             <select
               value={sector}
               onChange={(e) => setSector(e.target.value)}
-              className="px-3 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              className="px-3 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
             >
               <option value="">All Areas</option>
               {sectors.map((s) => (
@@ -183,7 +183,7 @@ function PropertiesFilter() {
             <select
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
-              className="px-3 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              className="px-3 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
             >
               {currentPriceRanges.map((range, i) => (
                 <option key={i} value={i.toString()}>{range.label}</option>
@@ -194,7 +194,7 @@ function PropertiesFilter() {
             <select
               value={beds}
               onChange={(e) => setBeds(e.target.value)}
-              className="px-3 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              className="px-3 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
             >
               <option value="0">Any Beds</option>
               <option value="1">1+ Bed</option>
@@ -208,7 +208,7 @@ function PropertiesFilter() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="px-3 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              className="px-3 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
             >
               <option value="newest">Newest First</option>
               <option value="price-asc">Price: Low to High</option>

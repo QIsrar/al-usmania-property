@@ -116,7 +116,7 @@ Additional Notes: ${formData.description || "None"}`;
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                  className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                   placeholder="Your full name"
                 />
               </div>
@@ -136,7 +136,7 @@ Additional Notes: ${formData.description || "None"}`;
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                  className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                   placeholder="03XXXXXXXXX"
                 />
               </div>
@@ -151,7 +151,7 @@ Additional Notes: ${formData.description || "None"}`;
                   onChange={(e) =>
                     setFormData({ ...formData, propertyType: e.target.value })
                   }
-                  className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                  className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                 >
                   {Object.entries(PROPERTY_TYPE_LABELS).map(([value, label]) => (
                     <option key={value} value={value}>
@@ -171,7 +171,7 @@ Additional Notes: ${formData.description || "None"}`;
                   onChange={(e) =>
                     setFormData({ ...formData, purpose: e.target.value })
                   }
-                  className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                  className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                 >
                   <option value="buy">Buy a property</option>
                   <option value="sale">Sell my property</option>
@@ -193,7 +193,7 @@ Additional Notes: ${formData.description || "None"}`;
                   onChange={(e) =>
                     setFormData({ ...formData, area: e.target.value })
                   }
-                  className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                  className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                   placeholder="e.g., Supply, Jinnahabad"
                 />
               </div>
@@ -210,7 +210,7 @@ Additional Notes: ${formData.description || "None"}`;
                     onChange={(e) =>
                       setFormData({ ...formData, areaSize: e.target.value })
                     }
-                    className="flex-1 px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                    className="flex-1 px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                     placeholder="e.g., 5"
                   />
                   <select
@@ -239,7 +239,7 @@ Additional Notes: ${formData.description || "None"}`;
                 onChange={(e) =>
                   setFormData({ ...formData, priceExpectation: e.target.value })
                 }
-                className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+                className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
                 placeholder="e.g., 50 Lakh or 30,000/month"
               />
             </div>
@@ -255,7 +255,7 @@ Additional Notes: ${formData.description || "None"}`;
                   setFormData({ ...formData, description: e.target.value })
                 }
                 rows={4}
-                className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 resize-none"
+                className="w-full px-4 py-2.5 bg-stone-50 border-2 border-stone-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 resize-none"
                 placeholder="Tell us anything else about your property — bedrooms, condition, special features, etc."
               />
             </div>
