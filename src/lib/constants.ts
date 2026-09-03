@@ -32,7 +32,7 @@ export const BUSINESS = {
   stats: {
     followers: "1,000+",
     recommendRate: "100%",
-    reviews: "100+",
+    satisfiedClients: "1000+",
   },
 } as const;
 
