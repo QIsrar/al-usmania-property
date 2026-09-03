@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { BUSINESS, WHATSAPP_MESSAGES, SEO } from "@/lib/constants";
 import { whatsappLink, phoneLink } from "@/lib/utils";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -92,7 +93,7 @@ export default function AboutPage() {
             ].map((stat, i) => (
               <div key={i}>
                 <p className="text-3xl lg:text-4xl font-bold text-brand-600 mb-1">
-                  {stat.value}
+                  <AnimatedCounter value={stat.value} />
                 </p>
                 <p className="text-sm text-stone-500">{stat.label}</p>
               </div>

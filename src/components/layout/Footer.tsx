@@ -155,12 +155,13 @@ export function Footer() {
                 href="https://qi-tyrix.netlify.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-stone-800 border border-stone-700 hover:border-brand-500/50 hover:bg-stone-800/80 transition-all duration-300 group"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-stone-800/80 border border-stone-700/50 hover:border-brand-500 hover:bg-stone-800 hover:shadow-[0_0_15px_rgba(217,119,6,0.3)] transition-all duration-500 group relative overflow-hidden"
               >
-                <span className="font-bold tracking-wide bg-gradient-to-r from-brand-400 to-amber-500 bg-clip-text text-transparent group-hover:from-brand-300 group-hover:to-amber-400">
+                <span className="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                <span className="relative font-bold tracking-widest text-[10px] uppercase bg-gradient-to-r from-stone-300 via-brand-400 to-amber-500 bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent group-hover:from-brand-300 group-hover:via-amber-400 group-hover:to-yellow-500 transition-all duration-500">
                   QI Tyrix
                 </span>
-                <svg className="w-3 h-3 text-stone-500 group-hover:text-brand-400 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <svg className="relative w-3.5 h-3.5 text-stone-500 group-hover:text-amber-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
               </a>
