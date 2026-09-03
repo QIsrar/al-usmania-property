@@ -16,13 +16,13 @@ export const BUSINESS = {
     coordinates: { lat: 34.1688, lng: 73.2215 },
   },
   phone: {
-    primary: "0322-5634463",
+    primary: "0333-5637183",
     secondary: "0321-9981683",
-    primaryClean: "+923225634463",
+    primaryClean: "+923335637183",
     secondaryClean: "+923219981683",
   },
   whatsapp: {
-    primary: "+923225634463",
+    primary: "+923335637183",
     secondary: "+923219981683",
   },
   social: {
