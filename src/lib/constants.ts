@@ -30,7 +30,7 @@ export const BUSINESS = {
   },
   hours: "Available 7 Days a Week",
   stats: {
-    followers: "1000!",
+    followers: "1000+",
     recommendRate: "100%",
     satisfiedClients: "1000+",
   },
